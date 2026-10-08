@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Inicio | Ecos Perdidos</title><meta name="description" content="Archivo digital de los sonidos que Puebla está dejando de escuchar.">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css"><link rel="stylesheet" href="css/navbar.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/responsive.css"></head><body data-root=""><a class="skip" href="#main">Saltar al contenido</a><div id="nav"></div><main id="main">
+<section class="hero"><div class="wrap"><h1>Puebla se está quedando sin sus sonidos.</h1>
+<p>Un archivo para escuchar el silbato del camotero, la flauta del afilador y otros ecos antes de que dejen de oírse.</p>
+<div class="acciones">
+  <button class="btn" data-play="camotero"><span aria-hidden="true">▶</span> Escuchar el silbato</button>
+  <a class="btn sec" href="pages/galeria.html">Ver la galería</a>
+  <button id="btn-instalar" class="btn" style="background:var(--cobalto);border-color:var(--cobalto);color:#fff" hidden>📲 Instalar App</button>
+</div>
+<div class="onda" id="onda" aria-hidden="true"></div></div></section>
+<section class="wrap"><h2>Tres ecos para empezar</h2><p class="lead">Cada sonido tiene su historia, su época y la razón por la que se apaga.</p><div class="grid" id="destacados"></div>
+<p style="margin-top:2rem"><a class="btn" href="pages/galeria.html">Ver los 6 sonidos</a></p></section>
+<section class="wrap dos" style="padding-top:0"><div><h2>¿Qué sonido extrañas?</h2><p class="lead">Si recuerdas un sonido de tu barrio que ya no se escucha, cuéntanoslo y lo sumamos al archivo.</p><a class="btn" style="background:var(--cobalto);border-color:var(--cobalto);color:#fff" href="pages/aporta.html">Aportar un eco</a></div>
+<figure><img src="assets/img/portada.jpg" alt="Calle del centro de Puebla al atardecer" loading="lazy" onerror="this.parentElement.hidden=true"></figure></section></main><div id="pie"></div><script src="js/data.js"></script><script src="js/audio-player.js"></script><script src="js/navbar.js"></script><script src="js/filtros.js"></script><script src="js/main.js"></script></body></html>
