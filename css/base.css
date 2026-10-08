@@ -1,0 +1,27 @@
+:root{--cobalto:#1B3A8C;--tinta:#0C1A44;--azulejo:#F5F7FC;--cielo:#D6E0F7;--sol:#F2B33D;--r:1140px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:400 1.05rem/1.65 Figtree,system-ui,sans-serif;background:var(--azulejo);color:var(--tinta)}
+h1,h2,h3{font-family:'Bricolage Grotesque',Georgia,sans-serif;line-height:1.08;letter-spacing:-.02em}
+h1{font-size:clamp(2.6rem,7vw,5.4rem);font-weight:800}
+h2{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;margin-bottom:.6rem}
+h3{font-size:1.3rem;font-weight:700}
+img,video{max-width:100%;display:block}
+a{color:var(--cobalto)}
+:focus-visible{outline:3px solid var(--sol);outline-offset:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:.5rem;z-index:99}
+.wrap{max-width:var(--r);margin:auto;padding:4rem 1.25rem}
+.lead{max-width:60ch;margin-bottom:2rem;font-size:1.15rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.4rem;border-radius:99px;border:2px solid var(--sol);background:var(--sol);color:var(--tinta);font:700 1rem Figtree,sans-serif;text-decoration:none;cursor:pointer}
+.btn.sec{background:transparent;color:#fff}
+.hero{background:var(--cobalto) repeating-conic-gradient(#ffffff0d 0 25%,transparent 0 50%) 0 0/56px 56px;color:#fff}
+.hero .wrap{padding-block:5rem 4rem}
+.hero p{max-width:52ch;margin:1.2rem 0 2rem;font-size:1.2rem;color:var(--cielo)}
+.hero .acciones{display:flex;flex-wrap:wrap;gap:.8rem}
+.onda{display:flex;align-items:center;gap:3px;height:110px;margin-top:3rem}
+.onda span{flex:1;height:var(--h);background:var(--sol);border-radius:2px;opacity:.85}
+.escuchando .onda span{animation:latir .8s ease-in-out infinite alternate;animation-delay:var(--d)}
+@keyframes latir{to{transform:scaleY(.2)}}
+.pagina{background:var(--cobalto);color:#fff}.pagina .wrap{padding-block:3.5rem 2.5rem}.pagina p{color:var(--cielo);max-width:55ch;margin-top:.8rem}
+footer{background:var(--tinta);color:var(--cielo);text-align:center;padding:2rem 1rem;font-size:.95rem}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto}}

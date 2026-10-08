@@ -1,0 +1,26 @@
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1.5rem}
+.card{display:flex;flex-direction:column;background:#fff;border:2px solid var(--tinta);border-radius:6px 26px 6px 6px;overflow:hidden}
+.card[hidden]{display:none}
+.media{position:relative;aspect-ratio:16/10;background:var(--c);display:grid;place-items:center;font-size:4rem;border-bottom:2px solid var(--tinta)}
+.media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card .body{padding:1.2rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.meta{font-size:.9rem;color:#4b5b8a;font-weight:600}
+.play{margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;gap:.6rem;background:var(--cobalto);color:#fff;border:0;border-radius:99px;padding:.6rem 1.1rem;font:700 .95rem Figtree,sans-serif;cursor:pointer}
+.play .ico{border-left:11px solid var(--sol);border-block:7px solid transparent}
+.play.sonando{background:var(--sol);color:var(--tinta)}.play.sonando .ico{width:11px;height:14px;border:0;background:var(--tinta)}
+.filtros{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem}
+.chip{border:2px solid var(--cobalto);background:#fff;color:var(--cobalto);border-radius:99px;padding:.4rem 1rem;font:700 .95rem Figtree,sans-serif;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--cobalto);color:#fff}
+.linea{list-style:none;padding:0;border-left:4px solid var(--cobalto);margin-left:.5rem}
+.linea li{position:relative;padding:0 0 2.2rem 1.8rem;display:grid;gap:.3rem}
+.linea li::before{content:"";position:absolute;left:-12px;top:.35rem;width:20px;height:20px;background:var(--sol);border:3px solid var(--tinta);transform:rotate(45deg)}
+.linea time{font:800 1.5rem 'Bricolage Grotesque',sans-serif;color:var(--cobalto)}
+.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
+.videos video{width:100%;aspect-ratio:16/9;background:var(--tinta);border:2px solid var(--tinta);border-radius:6px 26px 6px 6px}
+.videos figcaption{padding-top:.7rem}
+form{display:grid;gap:1.1rem;max-width:620px}
+label{display:grid;gap:.35rem;font-weight:600}
+input,select,textarea{font:inherit;padding:.7rem .9rem;border:2px solid var(--tinta);border-radius:6px;background:#fff}
+textarea{min-height:130px}
+.aviso{padding:1rem 1.2rem;background:var(--cielo);border-left:6px solid var(--sol);border-radius:4px;max-width:620px}
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}

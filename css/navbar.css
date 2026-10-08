@@ -1,0 +1,7 @@
+.nav{background:var(--tinta);position:sticky;top:0;z-index:50}
+.nav-in{max-width:var(--r);margin:auto;padding:.7rem 1.25rem;display:flex;align-items:center;justify-content:space-between}
+.logo{font:800 1.3rem 'Bricolage Grotesque',sans-serif;color:#fff;text-decoration:none}.logo b{color:var(--sol)}
+.menu{display:flex;gap:.3rem;list-style:none;padding:0}
+.menu a{color:var(--cielo);text-decoration:none;padding:.5rem .8rem;border-radius:99px;font-weight:600;font-size:.95rem}
+.menu a:hover{color:#fff}.menu a[aria-current=page]{background:var(--sol);color:var(--tinta)}
+.burger{display:none;background:none;border:2px solid var(--cielo);color:#fff;border-radius:8px;padding:.4rem .7rem;font:inherit;cursor:pointer}
