@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aporta un eco | Ecos Perdidos</title><meta name="description" content="Propón un sonido de Puebla para el archivo.">
+<link rel="manifest" href="../manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/base.css"><link rel="stylesheet" href="../css/navbar.css"><link rel="stylesheet" href="../css/components.css"><link rel="stylesheet" href="../css/responsive.css"></head><body data-root="../"><a class="skip" href="#main">Saltar al contenido</a><div id="nav"></div><main id="main"><section class="pagina"><div class="wrap"><h1 style="font-size:clamp(2.2rem,5vw,3.8rem)">Aporta un eco</h1><p>Cuéntanos qué sonido ya no se escucha en tu barrio.</p></div></section><section class="wrap"><form id="form-eco"><label>Tu nombre<input name="nombre" required autocomplete="name"></label>
+<label>¿Qué sonido es?<input name="sonido" required placeholder="Ej. El pregón del vendedor de raspados"></label>
+<label>Categoría<select name="cat"><option>Oficios</option><option>Calle</option><option>Hogar</option><option>Fiestas</option></select></label>
+<label>¿Dónde y cuándo lo escuchabas?<input name="donde" required placeholder="Colonia o barrio, y década"></label>
+<label>Descríbelo con tus palabras<textarea name="desc" required minlength="20"></textarea></label>
+<button class="btn" style="background:var(--cobalto);border-color:var(--cobalto);color:#fff" type="submit">Enviar mi eco</button></form>
+<p class="aviso" id="gracias" tabindex="-1" role="status" hidden>Recibimos tu eco. Gracias por ayudar a que Puebla no lo olvide.</p></section></main><div id="pie"></div><script src="../js/data.js"></script><script src="../js/audio-player.js"></script><script src="../js/navbar.js"></script><script src="../js/filtros.js"></script><script src="../js/main.js"></script></body></html>
